@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Japan and China Pre-World War I</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Japan and China Pre-World War I</h1>
+    <div class="content">
+      <div>
+        <img
+          src="./img/Naval_ensign_of_the_Empire_of_Japan.png"
+          alt=""
+          height="148"
+          width="222"
+          style="height: 15%; width: 15%; min-width: 100px"
+        />
+        <img
+          src="./img/Flag_of_China_(1889-1912).png"
+          alt=""
+          height="853"
+          width="1280"
+          style="height: 15%; width: 15%; float: right; min-width: 100px"
+        />
+      </div>
+
+      <div style="overflow: hidden">
+        <p style="float: left; width: 50%">
+          <b>Japan - Edo Period (Shogun Rule)</b>
+        </p>
+        <p style="float: right; width: 50%; text-align: right">
+          <b>China - Qing Dynasty (Monarchy)</b>
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="container left">
+        <div class="content">
+          <h2>Treaty of Kanagawa</h2>
+          <h3>1854</h3>
+          <p>
+            Japanese ports were forced to open to American ships. Japan's
+            isolation period of more than 200 years known as Sakoku (鎖国,
+            "locked country") ended and led to the collapse of the Shogun era.
+          </p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>Second Opium War</h2>
+          <h3>1856-1860</h3>
+          <p>
+            France joined Britain and defeated Qing China in the Second Opium
+            War. China was forced to concede more territories and pay large
+            reparations.
+          </p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h2>Meiji Restoration began</h2>
+          <h3>1868</h3>
+          <p>
+            Japan underwent political, military, economic, and social reforms to
+            strengthen the nation and to centralize the power of Emperor Meiji.
+            In 1889, with the adoption of the Meiji Constitution, Japan became
+            Asia's first constitutional monarchy.
+          </p>
+          <img
+            id="03"
+            src="./img/Prewar_S1_03.jpg"
+            alt=""
+            height="2022"
+            width="3903"
+            class="image"
+            onclick="imgFull(this.src, this.id)"
+          />
+          <figcaption id="cap03">
+            Issuance of the State Constitution in the State Chamber of the New
+            Imperial Palace by Adachi Ginkō, 1889.
+          </figcaption>
+          <p><b> Source: </b> 纪念辛亥革命100周年图片展</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>Sino-French War</h2>
+          <h3>1884-1885</h3>
+          <p>
+            China was defeated and ceded the protectorate of Vietnam to France.
+          </p>
+        </div>
+      </div>
+      <div class="midContainer middle">
+        <div class="content">
+          <h2>Lvshun Massacre</h2>
+          <h3>1894</h3>
+          <p>
+            Also known as the Port Arthur Massacre, the Japanese military
+            occupied the Lvshunkou district in Liaoning Province and began
+            massacring Chinese soldiers and civilians on November 21, 1894,
+            during the First Sino-Japanese War. An estimated 20,000 were killed
+            in 4 days.
+          </p>
+          <img
+            src="./img/Prewar_S1_11.gif"
+            alt=""
+            height="447"
+            width="600"
+            class="image"
+            onclick="imgFull(this.src)"
+          />
+          <figcaption>
+            Foreign troops in Beijing following the Boxer Rebellion.
+          </figcaption>
+          <p>
+            <b> Source: </b> The Metropolitan Museum of Art, New York, Gift of
+            Lincoln Kirstein, 1959
+          </p>
+        </div>
+      </div>
+      <div class="midContainer middle">
+        <div class="content">
+          <h2>Boxer Rebellion and Eight-Nation Alliance</h2>
+          <h3>1900</h3>
+          <p>
+            The rebellion started as an anti-imperialist, anti-foreign and
+            anti-Christian peasant uprising in Northern China led by the Boxer
+            Militia (United in Righteousness), and later supported by Qing
+            Empress Cixi. In response, the Eight-Nation Alliance sent troops to
+            Beijing and defeated the Boxer militia and supporting Qing troops,
+            followed by uncontrollable plunders and destructions. The Qing
+            government paid billions in indemnity.
+          </p>
+          <img
+            src="./img/Prewar_S1_07.jpg"
+            alt=""
+            height="988"
+            width="1440"
+            class="image"
+            onclick="imgFull(this.src)"
+          />
+          <figcaption>
+            The turning point of Xinhai Revolution - Wuchang uprising on October
+            10, 1911.
+          </figcaption>
+          <p>
+            <b> Source: </b> Library of Congress, Prints & Photographs Division
+          </p>
+          <p
+            onclick="moreInfo()"
+            style="color: red; cursor: pointer; font-size: 24px"
+          >
+            <u>More info</u>
+          </p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>Xinhai Revolution</h2>
+          <h3>1911</h3>
+          <p>
+            The Chinese Revolution led by Sun Yat-sen ended the monarchy rule of
+            China and established the Republic of China. The new Republic
+            quickly fell into political turmoil and local warlordism until 1928.
+          </p>
+        </div>
+      </div>
+      <div class="midContainer middle">
+        <div class="content">
+          <h2>World War I</h2>
+          <h3>1914-1918</h3>
+          <p>
+            Japan joined Britain and its allies against Germany. After World War
+            I, under the Treaty of Versailles, Japan gained control of Shantung
+            (Shandong) Peninsula of China and other Pacific Islands previously
+            under German control.
+          </p>
+          <img
+            src="./img/Prewar_S1_08.jpg"
+            alt=""
+            height="677"
+            width="1200"
+            class="image"
+            onclick="imgFull(this.src)"
+          />
+          <figcaption>
+            A Japanese heavy gun position during the siege of Tsingtao, formerly
+            under German control.
+          </figcaption>
+          <p>
+            <b> Source: </b> The Illustrated War News, Number 21, December 30,
+            1914
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="imageFull" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="img01" />
+      <div id="caption"></div>
+    </div>
+
+    <div id="moreInfo" class="modal">
+      <span class="close">&times;</span>
+      <div class="content" style="width: 90%; margin: auto">
+        <h2>Boxer Rebellion & Eight-Nation Alliance</h2>
+        <div style="float: right; width: 50%; min-width: 150px">
+          <img
+            src="./img/battle-peking-foreign-powers.jpg"
+            alt=""
+            height="493"
+            width="740"
+            style="width: 90%; margin: 0px 5%"
+          />
+          <figcaption>
+            Foreign powers involved in the Boxer Rebellion
+          </figcaption>
+        </div>
+        <p>
+          After the First and Second Opium Wars (1839-42, 1856-60), the
+          Sino-Japanese War (1894-1895), as well as the other forms of
+          imperialists invasion in China, the Chinese felt threatened by outside
+          powers. However, since China lacked a modernized military and had
+          incurred millions of causalities from the wars, the Qing government
+          was incapable of protecting the people.
+        </p>
+        <p>
+          Other groups stepped up to fulfill the role. By the late 1890s, a
+          Chinese secret group, the Society of Righteous and Harmonious Fists,
+          had begun carrying out regular attacks on foreign missionaries and
+          Chinese Christians. This was the beginning of the anti-foreigner Boxer
+          Rebellion.
+        </p>
+        <h3>The militia united in righteousness</h3>
+        <p>
+          A Chinese secret organization in the late Qing dynasty in China, known
+          as “Boxers” in English due to its participants being well-trained in
+          martial arts.
+        </p>
+        <p>
+          Their goal was to lead an uprising in Northern China against the
+          spread of Western and Japanese imperialism across Chinese territory.
+        </p>
+        <p>
+          Provincial leaders and the Chinese imperial court varied in their
+          stances towards thee group, since Boxer activity spread widely; there
+          was no unified government response.
+        </p>
+        <p>
+          Their slogan: “Support the Qing government and exterminate the
+          foreigners” (扶清滅洋​)
+        </p>
+        <h3>Uprising of the Boxers</h3>
+        <p>
+          As foreign influence expanded rapidly in China, the supporters of
+          Boxers also increased exponentially with the intent of restoring
+          Chinese's domination and culture. Initially, The Qing government
+          remained silence towards the boxer movement. Violence against Western
+          power and missionaries began to intensify. As a result, foreign powers
+          pressured the Imperial authority to defend the Christian communities.
+          In order to blunt the Boxers' threat to the dynasty, the Qing empress
+          (Cixi) sided with Boxers against Westerners. However, the Boxer
+          Rebellion was soon put down by the troops of the Eight-Nation
+          Alliance.
+        </p>
+        <h3>The Eight-Nation Alliance</h3>
+        <p>
+          Background of the Eight-Nation Alliance: The Boxers had been attacking
+          and killing foreign missionaries across northern China, with the Qing
+          government tacitly condoning their actions.
+        </p>
+        <p>
+          In response to the Rebellions, Germany, Japan, Russia, Britain,
+          France, United States, Italy, and Austria-Hungary sent approximately
+          45,000 troops to Northern China. This would be known as the
+          Eight-Nation Alliance.
+        </p>
+        <h3>The Battle of Beijing (August 14 - August 15, 1900)</h3>
+        <p>
+          By August of 1900, the movement of Boxers had spread to Beijing. Their
+          actions included torching Western churches, murdering Chinese
+          Christians and attacking foreigners in Beijing.
+        </p>
+        <p>
+          Britain led the Eight-Nation Alliance to rescue the besieged foreign
+          citizens in Beijing from 14th and 15th August 1900.
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
